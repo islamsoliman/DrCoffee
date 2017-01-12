@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="jxi-FY-zVT" customClass="CollectionViewCell" customModule="DrCoffe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="q2k-Kh-wLp">
+                        <rect key="frame" x="20" y="7" width="50" height="50"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="YdX-Jf-WaV"/>
+                            <constraint firstAttribute="width" constant="50" id="h3y-eP-x17"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xx-d9-YrR">
+                        <rect key="frame" x="30" y="62" width="31" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9xx-d9-YrR" firstAttribute="centerX" secondItem="jxi-FY-zVT" secondAttribute="centerX" id="4Mp-4G-COp"/>
+                <constraint firstAttribute="topMargin" secondItem="q2k-Kh-wLp" secondAttribute="top" constant="1" id="Iiu-Di-jJ1"/>
+                <constraint firstItem="9xx-d9-YrR" firstAttribute="top" secondItem="q2k-Kh-wLp" secondAttribute="bottom" constant="5" id="tNF-SD-zdr"/>
+                <constraint firstItem="q2k-Kh-wLp" firstAttribute="centerX" secondItem="jxi-FY-zVT" secondAttribute="centerX" id="tSf-rp-3fx"/>
+            </constraints>
+            <size key="customSize" width="162" height="135"/>
+            <connections>
+                <outlet property="dayNameLabel" destination="9xx-d9-YrR" id="n5a-bf-2HD"/>
+                <outlet property="selectionView" destination="q2k-Kh-wLp" id="HIf-wj-jsV"/>
+            </connections>
+            <point key="canvasLocation" x="-108" y="139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="loginLogo" width="75" height="75"/>
+    </resources>
+</document>

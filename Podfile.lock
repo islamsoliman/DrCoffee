@@ -1,0 +1,25 @@
+PODS:
+  - EVReflection (2.40.0)
+  - GoogleMaps (2.0.0):
+    - GoogleMaps/Maps (= 2.0.0)
+  - GoogleMaps/Base (2.0.0)
+  - GoogleMaps/Maps (2.0.0):
+    - GoogleMaps/Base (= 2.0.0)
+  - IQKeyboardManagerSwift (4.0.4)
+  - PKHUD (3.2.1)
+
+DEPENDENCIES:
+  - EVReflection (~> 2.6)
+  - GoogleMaps
+  - IQKeyboardManagerSwift
+  - PKHUD (~> 3.0)
+
+SPEC CHECKSUMS:
+  EVReflection: 0e8ec81c1f92646aac670b64b3199c02c5c0ae2d
+  GoogleMaps: ed04212f95710a19639fd9950ef97b897e4391de
+  IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
+  PKHUD: 001c11518f125a273ddf026bcc64918423744ea2
+
+PODFILE CHECKSUM: d1c92b437c2695ec6607d67151ad939794560d56
+
+COCOAPODS: 1.1.1

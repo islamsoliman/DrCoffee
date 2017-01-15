@@ -24,10 +24,12 @@ class UsersDB {
             let results =
                 try managedContext.executeFetchRequest(fetchRequest)
             if(results.count > 0  ){
-            updatable.update("")
+            updatable.update("true")
             return true
                 
             }else{
+                updatable.update("false")
+
             return false
             }
             

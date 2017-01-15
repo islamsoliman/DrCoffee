@@ -19,4 +19,5 @@ class  Users : NSManagedObject {
    @NSManaged var gender : String?
     
     
+    
 }

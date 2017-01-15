@@ -7,17 +7,15 @@
 //
 
 import Foundation
-class MapViewController : UIViewController{
+class MapViewController : UIViewController ,Updatable{
     var locationManager = CLLocationManager()
     @IBOutlet weak var mapView: GMSMapView!
     override func viewDidLoad() {
         mapView.delegate = self
         getLocation()
-        
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(30.057078,31.345603)
-        marker.map = mapView
-
+        StoresViewModel.sharedInstance.saveStores()
+        DrCoffeeStoresDB.sharedInstance.getAllStores(self)
+       
         
     }
     
@@ -34,5 +32,15 @@ class MapViewController : UIViewController{
             
         }
     }
-    
+    func update(apiName: String) {
+        for store in DrCoffeeStoresDB.sharedInstance.Stores {
+              let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2DMake(Double(store.valueForKey("latitude") as! String)!,Double( store.valueForKey("longitude") as! String)!)
+            marker.icon = UIImage(named: "mapIcon")
+            marker.map = mapView
+
+        }
+        
+    }
+
     }

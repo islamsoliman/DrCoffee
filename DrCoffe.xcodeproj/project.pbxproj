@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0706359A1E2B80C200C3390D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 070635991E2B80C200C3390D /* data.json */; };
+		0706359C1E2B831B00C3390D /* DrCoffeeStoresDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0706359B1E2B831B00C3390D /* DrCoffeeStoresDB.swift */; };
+		0706359E1E2B836300C3390D /* DrCoffeeStores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0706359D1E2B836300C3390D /* DrCoffeeStores.swift */; };
+		070635A01E2B863B00C3390D /* StoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0706359F1E2B863B00C3390D /* StoresViewModel.swift */; };
 		0725A9BB1E27746700343197 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725A9BA1E27746700343197 /* CollectionViewCell.swift */; };
 		0725A9BD1E27771F00343197 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0725A9BC1E27771F00343197 /* CollectionViewCell.xib */; };
 		0725A9BF1E27B1A300343197 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725A9BE1E27B1A300343197 /* AlertHelper.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070635991E2B80C200C3390D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		0706359B1E2B831B00C3390D /* DrCoffeeStoresDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrCoffeeStoresDB.swift; sourceTree = "<group>"; };
+		0706359D1E2B836300C3390D /* DrCoffeeStores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrCoffeeStores.swift; sourceTree = "<group>"; };
+		0706359F1E2B863B00C3390D /* StoresViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoresViewModel.swift; sourceTree = "<group>"; };
 		0725A9BA1E27746700343197 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		0725A9BC1E27771F00343197 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		0725A9BE1E27B1A300343197 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
@@ -85,9 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070635981E2B809A00C3390D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				070635991E2B80C200C3390D /* data.json */,
+			);
+			name = Resources;
+			path = DrCoffe/Sources;
+			sourceTree = "<group>";
+		};
 		0750188E1E24EB3000F3105E = {
 			isa = PBXGroup;
 			children = (
+				070635981E2B809A00C3390D /* Resources */,
 				075018991E24EB3000F3105E /* DrCoffe */,
 				075018981E24EB3000F3105E /* Products */,
 				0F52667591C640952662D577 /* Pods */,
@@ -137,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				07A1F92E1E26363700ECE3EB /* UserModel.swift */,
+				0706359F1E2B863B00C3390D /* StoresViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +182,8 @@
 				07A1F9491E263A0F00ECE3EB /* DataController.swift */,
 				07A1F94A1E263A0F00ECE3EB /* Users.swift */,
 				07A1F94B1E263A0F00ECE3EB /* UsersDB.swift */,
+				0706359B1E2B831B00C3390D /* DrCoffeeStoresDB.swift */,
+				0706359D1E2B836300C3390D /* DrCoffeeStores.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -254,6 +275,7 @@
 				07EA2D1B1E262B4100C8C18B /* Database in Resources */,
 				07EA2D1A1E262B4100C8C18B /* ViewControllers in Resources */,
 				0725A9BD1E27771F00343197 /* CollectionViewCell.xib in Resources */,
+				0706359A1E2B80C200C3390D /* data.json in Resources */,
 				075018A01E24EB3000F3105E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0706359E1E2B836300C3390D /* DrCoffeeStores.swift in Sources */,
 				07A1F93F1E26363700ECE3EB /* ViewController.swift in Sources */,
 				07A1F93C1E26363700ECE3EB /* LoginViewController.swift in Sources */,
 				0725A9BB1E27746700343197 /* CollectionViewCell.swift in Sources */,
@@ -322,9 +345,11 @@
 				075018A31E24EB3000F3105E /* DrCoffe.xcdatamodeld in Sources */,
 				07A1F94D1E263A0F00ECE3EB /* Users.swift in Sources */,
 				07CDE2E41E2669AB00D261AE /* AlertDialog.swift in Sources */,
+				0706359C1E2B831B00C3390D /* DrCoffeeStoresDB.swift in Sources */,
 				0725A9BF1E27B1A300343197 /* AlertHelper.swift in Sources */,
 				07CDE2E81E266CB100D261AE /* Loading.swift in Sources */,
 				07A1F9471E2638FD00ECE3EB /* MapViewController.swift in Sources */,
+				070635A01E2B863B00C3390D /* StoresViewModel.swift in Sources */,
 				07CDE2E61E266B7A00D261AE /* Updatable.swift in Sources */,
 				07A1F9451E2638C700ECE3EB /* ColorExt.swift in Sources */,
 				07CDE2EA1E26779D00D261AE /* HomeViewController.swift in Sources */,

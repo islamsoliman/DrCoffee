@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:mm.gpx">
+   </FileRef>
+   <FileRef
       location = "group:DrCoffe.xcodeproj">
    </FileRef>
    <FileRef

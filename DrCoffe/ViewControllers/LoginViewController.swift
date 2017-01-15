@@ -82,9 +82,15 @@ class LoginViewController: UIViewController, Updatable {
     func backBtn(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
     }
-    func update(apiName: String) {
+    func update(update: String) {
         Loading.sharedInstance.dismissLoading()
+
+        if update == "true"{
         navigate()
+        }else{
+            AlertDialog.sharedInstance.showAlert(self, title: "", message: "username or password doesnt match")
+
+        }
     }
 }
 

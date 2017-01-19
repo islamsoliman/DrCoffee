@@ -19,6 +19,10 @@
 		075018A31E24EB3000F3105E /* DrCoffe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 075018A11E24EB3000F3105E /* DrCoffe.xcdatamodeld */; };
 		075018A51E24EB3000F3105E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075018A41E24EB3000F3105E /* Assets.xcassets */; };
 		075018A81E24EB3000F3105E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075018A61E24EB3000F3105E /* LaunchScreen.storyboard */; };
+		0787C4611E2F9E7C00C3BD65 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787C4601E2F9E7C00C3BD65 /* OrdersViewController.swift */; };
+		0787C4631E2FA72900C3BD65 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787C4621E2FA72900C3BD65 /* HeaderCell.swift */; };
+		0787C4651E2FA88E00C3BD65 /* ExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787C4641E2FA88E00C3BD65 /* ExpandCell.swift */; };
+		0787C4671E2FC0E600C3BD65 /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787C4661E2FC0E600C3BD65 /* OrderCollectionViewCell.swift */; };
 		07A1F93B1E26363700ECE3EB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1F92E1E26363700ECE3EB /* UserModel.swift */; };
 		07A1F93C1E26363700ECE3EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1F9301E26363700ECE3EB /* LoginViewController.swift */; };
 		07A1F93D1E26363700ECE3EB /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1F9311E26363700ECE3EB /* MainNavigationViewController.swift */; };
@@ -57,6 +61,10 @@
 		075018A71E24EB3000F3105E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		075018A91E24EB3000F3105E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076198DC1E252F6E005D95F7 /* DrCoffe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrCoffe-Bridging-Header.h"; sourceTree = "<group>"; };
+		0787C4601E2F9E7C00C3BD65 /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		0787C4621E2FA72900C3BD65 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		0787C4641E2FA88E00C3BD65 /* ExpandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCell.swift; sourceTree = "<group>"; };
+		0787C4661E2FC0E600C3BD65 /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
 		07A1F92E1E26363700ECE3EB /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		07A1F9301E26363700ECE3EB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		07A1F9311E26363700ECE3EB /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +180,10 @@
 				07A1F9461E2638FD00ECE3EB /* MapViewController.swift */,
 				07CDE2E91E26779D00D261AE /* HomeViewController.swift */,
 				07CDE2EB1E267D4D00D261AE /* TabViewController.swift */,
+				0787C4601E2F9E7C00C3BD65 /* OrdersViewController.swift */,
+				0787C4621E2FA72900C3BD65 /* HeaderCell.swift */,
+				0787C4641E2FA88E00C3BD65 /* ExpandCell.swift */,
+				0787C4661E2FC0E600C3BD65 /* OrderCollectionViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -339,13 +351,16 @@
 				07A1F93F1E26363700ECE3EB /* ViewController.swift in Sources */,
 				07A1F93C1E26363700ECE3EB /* LoginViewController.swift in Sources */,
 				0725A9BB1E27746700343197 /* CollectionViewCell.swift in Sources */,
+				0787C4631E2FA72900C3BD65 /* HeaderCell.swift in Sources */,
 				07A1F93E1E26363700ECE3EB /* RegisterationViewController.swift in Sources */,
 				0750189B1E24EB3000F3105E /* AppDelegate.swift in Sources */,
 				07CDE2EC1E267D4D00D261AE /* TabViewController.swift in Sources */,
+				0787C4611E2F9E7C00C3BD65 /* OrdersViewController.swift in Sources */,
 				075018A31E24EB3000F3105E /* DrCoffe.xcdatamodeld in Sources */,
 				07A1F94D1E263A0F00ECE3EB /* Users.swift in Sources */,
 				07CDE2E41E2669AB00D261AE /* AlertDialog.swift in Sources */,
 				0706359C1E2B831B00C3390D /* DrCoffeeStoresDB.swift in Sources */,
+				0787C4671E2FC0E600C3BD65 /* OrderCollectionViewCell.swift in Sources */,
 				0725A9BF1E27B1A300343197 /* AlertHelper.swift in Sources */,
 				07CDE2E81E266CB100D261AE /* Loading.swift in Sources */,
 				07A1F9471E2638FD00ECE3EB /* MapViewController.swift in Sources */,
@@ -355,6 +370,7 @@
 				07CDE2EA1E26779D00D261AE /* HomeViewController.swift in Sources */,
 				07A1F93D1E26363700ECE3EB /* MainNavigationViewController.swift in Sources */,
 				07A1F93B1E26363700ECE3EB /* UserModel.swift in Sources */,
+				0787C4651E2FA88E00C3BD65 /* ExpandCell.swift in Sources */,
 				07A1F94C1E263A0F00ECE3EB /* DataController.swift in Sources */,
 				07A1F94E1E263A0F00ECE3EB /* UsersDB.swift in Sources */,
 			);
